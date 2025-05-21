@@ -1,0 +1,219 @@
+
+
+
+img{
+    height: 70px;
+    width: 70px;
+}
+
+
+
+body {
+    background-image: url(./imagenes/FFB8779D-5B42-401A-800B-DB15D317DAA3.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+
+}
+
+.terminalyperfil{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/*terminal global */
+
+.terminal{
+margin-right: 20px;
+margin-top: 10%;
+}
+
+
+
+/*navegador de la terminal */
+
+
+.navegador-terminal{
+
+background-color: grey;
+height: 25px;
+max-width: 95.4%;
+border-radius: 2px;
+display: flex;
+justify-content: end;
+align-items: center;
+
+}
+
+/*terminal parrafo */
+
+
+.parrafoterminal{
+    font-weight: bold;
+    font-family: monospace, "Courier New", Courier, monospace;
+    font-size: 12px;
+    margin-right: 240px;
+}
+
+/*terminal boton de cerrar */
+
+
+.botoneliminar{
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+}
+
+
+
+/*terminal cuerpo */
+
+
+.cuerpo {
+    padding: 20px;
+    max-width: 90%;
+    background-color: #64093b;
+  
+    height: 350px;
+    line-height: 1.5;
+    border-radius: 5px;
+
+}
+
+
+/*parrafos estaticos */
+
+
+.primerosterminal{
+
+    margin-bottom: 15px;
+    display: block;
+}
+
+/*parrafos dinamicos y transicion de cursor blink*/
+
+.line {
+    display: block;
+    margin-bottom: 15px;
+}
+
+
+
+
+.line::after {    
+    content: "|";
+    display: inline-block;
+    width: 10px;
+    background-color: #ffffff;
+    animation: blink 1s step-end infinite;
+    margin-left: 5px;
+}
+
+
+@keyframes blink {
+    50% {
+        background-color: transparent;
+    }
+}
+
+
+/*parrafos color verde */
+
+
+.prompt {
+    color: #00ff00; 
+    font-weight: bold;
+    font-family: monospace, "Courier New", Courier, monospace;
+    font-size: 15px;
+}
+
+/*parrafos color blanco */
+
+
+.command {
+    color: #ffffff; 
+    font-family: monospace, "Courier New", Courier, monospace;
+
+}
+
+/*parrafos color amarillo */
+
+
+.output {
+    color: #ffff00; 
+    margin-left: 20px;
+    font-family: monospace, "Courier New", Courier, monospace;
+
+}
+
+
+
+
+.perfil{
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+    margin-top: 15%;
+    align-items: center; 
+    text-align: center;  
+}
+
+.imagenesprogramacion{
+
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    margin-top: 30px;
+    overflow: hidden;
+    border-radius: 10px;
+ 
+}
+
+
+  
+  .sobremi{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 50px;
+    font-weight: 200;
+    text-decoration: underline;
+    margin-top: 170px;
+    margin-bottom: 280px;
+
+  }
+
+
+
+
+
+
+
+
+.minombre{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.presentacionminombre{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    
+}
+
+
+.foot{
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    height: 30px;
+    position: fixed;
+}
+
