@@ -1,5 +1,7 @@
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 img{
     height: 70px;
@@ -21,8 +23,57 @@ body {
 
 }
 
+/* Área invisible para activar el menú con hover */
+.nav-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px; /* área de detección del mouse */
+    z-index: 10;
+}
+
+/* Menú oculto por defecto */
+nav {
+    position: fixed;
+    top: -10px; /* oculto fuera de pantalla */
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transition: top 0.3s ease;
+    z-index: 9;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Mostrar nav al hacer hover sobre el wrapper */
+.nav-wrapper:hover nav {
+    top: 0;
+}
+
+.extra:hover{
+text-decoration: underline;
+}
+
+#idsobremi {
+    scroll-margin-top: 100px; 
+}
 
 
+#idproyectos{
+    scroll-margin-top: 100px; 
+
+}
+
+.extra{
+    color: white;
+
+}
 
 .terminalyperfil{
     display: flex;
@@ -34,7 +85,7 @@ body {
 /*terminal global */
 
 .terminal{
-margin-right: 150px;
+margin-right: 50px;
 margin-top: 10%;
 }
 
@@ -240,21 +291,18 @@ align-items: center;
   
 
 .servicio1{
-    background-color: black;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));    
     padding: 30px;
     margin-left: 100px;
     width: 35%;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
-   
     animation: aparecerDesdeAbajo 1s ease-out forwards;
-    transition: 0.2s ease;
 }
 
 .servicio1:hover, .servicio2:hover{
 
-    background-color: white;
-    color: black;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));    
     border-radius: 10px;
 
 
@@ -296,7 +344,7 @@ align-items: center;
 
 
 .servicio2{
-    background-color: black;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 1, 0));    
     margin-right: 100px;
     padding: 30px;
     font-family: "Montserrat", sans-serif;
@@ -464,7 +512,7 @@ margin-top: 25px;
 
 .pulse23{
     --color: #832051;
-    --hover: #ef8f6e;
+    --hover: #024202;
     color: var(--color);
     font-family: "Montserrat", sans-serif;
     background-color: #ffffff;
@@ -475,7 +523,7 @@ margin-top: 25px;
     margin-left: 20px;
     transition: 0.25s;
     width: 90%;
-    margin-top: 30px;
+    margin-top: 10px;
 
 
 }
@@ -487,7 +535,7 @@ margin-top: 25px;
     box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
     color: #ffffff;
     border-color: #000000;
-    background-color: #e4141f;
+    background-color: #024202;
     border-radius: 20px;
 
   }
@@ -498,6 +546,47 @@ margin-top: 25px;
     }
   }
   
+
+
+
+  .pulse24{
+    --color: #832051;
+    --hover:  #4b8de4;
+    color: var(--color);
+    font-family: "Montserrat", sans-serif;
+    background-color: #ffffff;
+    border: 2px solid var(--color);
+    font-size: 15px;
+    line-height: 1;
+    padding: 1em 2em;
+    margin-left: 20px;
+    transition: 0.25s;
+    width: 90%;
+    margin-top: 75px;
+
+
+}
+
+
+ .pulse24:hover,
+  .pulse24:focus {
+    animation: pulse 1s;
+    box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+    color: #ffffff;
+    border-color: #000000;
+    background-color: #4b8de4;
+    border-radius: 20px;
+
+  }
+  
+  @keyframes pulse24{
+    0% {
+      box-shadow: 0 0 0 0 var(--hover);
+    }
+  }
+  
+
+
 
 
 
